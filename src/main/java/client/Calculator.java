@@ -6,10 +6,6 @@ public class Calculator {
     }
 
     public boolean isPositive(int n) {
-        return n < 0;
-    }
-
-    public int subtract(int a, int b) {
-        return a - b;
+        return n > 0;
     }
 }
