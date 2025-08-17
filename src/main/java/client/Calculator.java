@@ -1,7 +1,7 @@
 package example;
 
 public class Calculator {
-    public int add(int a, double b) {
+    public double newadd(int a, double b) {
         return a + b;
     }
 
