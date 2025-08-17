@@ -1,8 +1,8 @@
 package example;
 
 public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
+    public int newadd(int a, int b) {
+        return a + b+2;
     }
 
     public boolean isPositive(int n) {
