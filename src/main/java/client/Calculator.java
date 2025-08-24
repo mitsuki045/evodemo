@@ -8,12 +8,12 @@ public class Calculator {
     // REMOVE METHOD → 削除
 
     // LOST VISIBILITY → public → protected
-    protected void newpublicMethod() {
+    public void newpublicMethod() {
         System.out.println("public method");
     }
 
     // CHANGE IN RETURN TYPE → int → double
-    public double newreturnInt() {
+    protected double returnInt() {
         return 42.0;
     }
 
