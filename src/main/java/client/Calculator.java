@@ -1,72 +1,71 @@
 // ファイル: example/Calculator.java
 package example;
 
-import java.io.IOException;
+import java.sql.SQLException;
 
 public class Calculator {
 
-    // REMOVE METHOD 対象
-    public int add(int a, int b) {
-        return a + b;
-    }
+    // REMOVE METHOD → 削除
 
-    // LOST VISIBILITY 対象
-    public void publicMethod() {
+    // LOST VISIBILITY → public → protected
+    protected void newpublicMethod() {
         System.out.println("public method");
     }
 
-    // CHANGE IN RETURN TYPE 対象
-    public int returnInt() {
-        return 42;
+    // CHANGE IN RETURN TYPE → int → double
+    public double newreturnInt() {
+        return 42.0;
     }
 
-    // CHANGE IN PARAMETER LIST 対象
-    public int addNumbers(int a, int b) {
-        return a + b;
+    // CHANGE IN PARAMETER LIST → (int,int) → (double,int)
+    public int newaddNumbers(double a, int b) {
+        return (int) a + b;
     }
 
-    // CHANGE IN EXCEPTION LIST 対象
-    public void mayThrow() throws IOException {
-        throw new IOException("error");
+    // CHANGE IN EXCEPTION LIST → IOException → SQLException
+    public void newmayThrow() throws SQLException {
+        throw new SQLException("error");
     }
 
-    // ADD FINAL MODIFIER 対象
-    public void overridable() {
-        System.out.println("can override");
+    // ADD FINAL MODIFIER
+    public final void newoverridable() {
+        System.out.println("cannot override");
     }
 
-    // REMOVE STATIC MODIFIER 対象
-    public static void staticMethod() {
-        System.out.println("static method");
+    // REMOVE STATIC MODIFIER
+    public void newstaticMethod() {
+        System.out.println("instance method now");
     }
 
-    // MOVE METHOD 対象
+    // MOVE METHOD → 別クラスに移動（このクラスからは削除）
+
+    // RENAME METHOD → renameMe → renamed
+    public void renamed() {
+        System.out.println("new name");
+    }
+
+    // PUSH DOWN METHOD → SubCalculator へ移動（ここから削除）
+
+    // INLINE METHOD → inlineCallee 削除して inlineCaller に展開
+    public void newinlineCaller() {
+        System.out.println("callee executed");
+    }
+}
+
+// MOVE METHOD 用の別クラス
+package example;
+public class Utils {
     public void moveMe() {
         System.out.println("moved method");
-    }
-
-    // RENAME METHOD 対象
-    public void renameMe() {
-        System.out.println("old name");
-    }
-
-    // PUSH DOWN METHOD 対象
-    public void pushDown() {
-        System.out.println("in superclass");
-    }
-
-    // INLINE METHOD 対象
-    public void inlineCaller() {
-        inlineCallee();
-    }
-
-    public void inlineCallee() {
-        System.out.println("callee executed");
     }
 }
 
 // PUSH DOWN METHOD 用のサブクラス
 package example;
 public class SubCalculator extends Calculator {
+    @Override
+    public void pushDown() {
+        System.out.println("moved to subclass");
+    }
 }
-}
+
