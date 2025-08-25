@@ -19,7 +19,7 @@ public class Calculator {
 
     // CHANGE IN PARAMETER LIST → (int,int) → (double,int)
     protected double newaddNumbers(int a, double b) {
-        return (int) a + b;
+        return  a + b;
     }
 
     // CHANGE IN EXCEPTION LIST → IOException → SQLException
