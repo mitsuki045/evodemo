@@ -25,6 +25,10 @@ public class Calculator {
         return a + b;
     }
 
+    protected void moveMe() {
+        System.out.println("moved method");
+    }
+    
     // CHANGE IN EXCEPTION LIST 対象
     public void mayThrow() throws IOException {
         throw new IOException("error");
@@ -59,12 +63,7 @@ public class Calculator {
     }
 }
 
-package example;
-public class Utils {
-    public void moveMe() {
-        System.out.println("moved method");
-    }
-}
+
 
 package example;
 public class SubCalculator extends Calculator {
