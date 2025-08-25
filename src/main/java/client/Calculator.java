@@ -13,12 +13,12 @@ public class Calculator {
     }
 
     // CHANGE IN RETURN TYPE → int → double
-    protected double returnInt() {
-        return 42.0;
+    protected int returnInt() {
+        return 42;
     }
 
     // CHANGE IN PARAMETER LIST → (int,int) → (double,int)
-    public int newaddNumbers(double a, int b) {
+    protected double newaddNumbers(double a, int b) {
         return (int) a + b;
     }
 
