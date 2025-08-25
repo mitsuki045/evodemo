@@ -13,7 +13,7 @@ public class Calculator {
     }
 
     // CHANGE IN RETURN TYPE → int → double
-    protected int returnInt() {
+    public int newreturnInt() {
         return 42;
     }
 
@@ -23,8 +23,8 @@ public class Calculator {
     }
 
     // CHANGE IN EXCEPTION LIST → IOException → SQLException
-    public void newmayThrow() throws SQLException {
-        throw new SQLException("error");
+    public void newmayThrow() throws IOException {
+        throw new IOException("error");
     }
 
     // ADD FINAL MODIFIER
