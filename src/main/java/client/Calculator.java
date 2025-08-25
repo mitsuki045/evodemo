@@ -18,7 +18,7 @@ public class Calculator {
     }
 
     // CHANGE IN PARAMETER LIST → (int,int) → (double,int)
-    protected double newaddNumbers(int a, double b) {
+    public double newaddNumbers(double a, double b) {
         return  a + b;
     }
 
