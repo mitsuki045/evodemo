@@ -40,20 +40,14 @@ public class Calculator {
         System.out.println("static method");
     }
 
-    // MOVE METHOD 対象
-    public void moveMe() {
-        System.out.println("moved method");
-    }
+    
 
     // RENAME METHOD 対象
     public void renameMe() {
         System.out.println("old name");
     }
 
-    // PUSH DOWN METHOD 対象
-    public void pushDown() {
-        System.out.println("in superclass");
-    }
+    
 
     // INLINE METHOD 対象
     public void inlineCaller() {
@@ -65,9 +59,19 @@ public class Calculator {
     }
 }
 
-// PUSH DOWN METHOD 用のサブクラス
+package example;
+public class Utils {
+    public void moveMe() {
+        System.out.println("moved method");
+    }
+}
+
 package example;
 public class SubCalculator extends Calculator {
+    @Override
+    public void pushDown() {
+        System.out.println("moved to subclass");
+    }
 }
 
 
