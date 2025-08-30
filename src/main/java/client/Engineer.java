@@ -17,25 +17,18 @@ public class Engineer extends Calculator {
         this.skill = skill;
     }
 
-     public void SetUserId(int userID) {
-        super.UserId = userID;
-    }
+    
     /**
      * スキル取得
-     */
-
-
-    public final double newadd (int a,double b){
-        return a+b;
-    }
-    
-     public void SetUserId(int userID) {
-        super.UserId = userID;
-    }
-    
+     */    
 
     protected String getSkill() {
         return Skill;
+    }
+
+    public static final int minus(double a, int b){
+        if (a<0) a+100;
+        return a-b;
     }
     
 
