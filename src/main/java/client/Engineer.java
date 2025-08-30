@@ -11,6 +11,9 @@ public class Engineer extends Calculator {
         return skill;
     }
 
+    protected final double add(double a, int b) {
+        return a + b;
+    }
     
     // Calculator の protected フィールド・メソッドは使用可能
     public int calculateSum(int a, int b) {
