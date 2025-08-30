@@ -22,7 +22,7 @@ public class Calculator {
         return 0+c;
     }
 
-    public int newcalmaltiply(int x){
+    public int calmaltiply(int x,int y){
         return x;
     }
 
