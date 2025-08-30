@@ -15,11 +15,13 @@ public class Calculator {
 
     // 計算メソッド
     
-    
+    public int minus(int a, int b){
+        return a-b;
+    }
     
 
     public int calminus(int x, int y) {
-        return x-y; // multiply() を呼び出し
+        return minus(int x,int y); 
     }
 
     public int multiply(int a, int b) {
@@ -27,9 +29,7 @@ public class Calculator {
     }
 
     public int calmaltiply(int x, int y){
-        int n;
-        n=a*b;
-        return b;
+        return multiply(x,y);
     }
 
 }
