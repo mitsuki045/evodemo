@@ -1,35 +1,18 @@
 package example;
-  
-public class Engineer extends Calculator {
-    /**
-     * スキル
-     */
-    private String Skill;
 
-    public int GetUserId() {
-        return UserId;
-    }
-    /**
-     * スキル設定
-     * @param skill
-     */
+public class Engineer extends Calculator {
+    private String skill;
+
     public void setSkill(String skill) {
         this.skill = skill;
     }
 
-    
-    /**
-     * スキル取得
-     */    
-
-    protected String getSkill() {
-        return Skill;
+    public String getSkill() {
+        return skill;
     }
 
-    public static final int minus(double a, int b){
-        if (a<0) a+100;
-        return a-b;
+    // Calculator の protected フィールド・メソッドは使用可能
+    public int calculateSum(int a, int b) {
+        return add(a, b); // 親クラスの add メソッドを使用
     }
-    
-
 }
