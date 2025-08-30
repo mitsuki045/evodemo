@@ -16,13 +16,13 @@ public class Calculator {
     // 計算メソッド
     
     
-    public int caltwo(int a,int b, int c){
+    public int newcaltwo(double a,int b, int c){
         if(a>b) return 100+c;
         if(b>a) return 50+c; 
         return 0+c;
     }
 
-    public int calmaltiply(int x,int y){
+    protected double newcalmaltiply(int x,int y){
         return x;
     }
 
