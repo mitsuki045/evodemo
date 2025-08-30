@@ -14,7 +14,8 @@ public class Calculator {
     }
 
     // 計算メソッド
-    protected final int add(int a, int b) {
-        return a + b;
+    
+    public int minus(int a, int b) {
+        return a - b;
     }
 }
