@@ -18,13 +18,6 @@ public class Calculator {
     protected double calminus(int x, int y) {
         return x-y; 
     }
-
-
-    public int newcalmaltiply(int x, int y){
-        return x*y;
-    }
-    
-
     
     
     public int caltwo(int a,int b, int c){
