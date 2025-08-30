@@ -18,5 +18,8 @@ public class Calculator {
      * ユーザID取得
      * @return
      */
+    public String getSkill() {
+        return Skill;
+    }
     
 }
