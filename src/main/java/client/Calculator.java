@@ -16,14 +16,20 @@ public class Calculator {
     // 計算メソッド
     
     
-
-    protected static final int newcalminus(int x, int y) {
-        return x-y; 
+    public int minus(int a,int b){
+        return a-b;
     }
 
+    public int calminus(int x, int y) {
+        return minus(x,y); 
+    }
+
+    public int maltiply(int a,int b){
+        return a*b;
+    }
 
     public int calmaltiply(int x, int y){
-        return x*y;
+        return maltiply(x,y);
     }
 
     public int twocho(int x,int y){
