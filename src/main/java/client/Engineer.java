@@ -19,4 +19,9 @@ public class Engineer extends Calculator {
     public int calculateSum(int a, int b) {
         return add(a, b); // 親クラスの add メソッドを使用
     }
+
+    protected double calminus(double x, int y) {
+        return x-y; 
+    }
+
 }
