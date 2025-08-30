@@ -20,5 +20,8 @@ public class Engineer extends Calculator {
     /**
      * スキル取得
      */
+    public String getSkill() {
+        return Skill;
+    }
     
 }
