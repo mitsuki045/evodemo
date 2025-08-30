@@ -1,88 +1,12 @@
-// ファイル: example/Calculator.java
 package example;
 
-import java.io.IOException;
-
-public class Calculator {
-
-    // REMOVE METHOD 対象
-    public int add(int a, int b) {
-        return a + b;
-    }
-
-    // LOST VISIBILITY 対象
-    public void publicMethod() {
-        System.out.println("public method");
-    }
-
-    // CHANGE IN RETURN TYPE 対象
-    public int returnInt() {
-        return 42;
-    }
-
-    // CHANGE IN PARAMETER LIST 対象
-    public int addNumbers(int a, int b) {
-        return a + b;
-    }
-
-   
-    
-    // CHANGE IN EXCEPTION LIST 対象
-    public void mayThrow() throws IOException {
-        throw new IOException("error");
-    }
-
-    // ADD FINAL MODIFIER 対象
-    public void overridable() {
-        System.out.println("can override");
-    }
-
-    // REMOVE STATIC MODIFIER 対象
-    public static void staticMethod() {
-        System.out.println("static method");
-    }
-
-    
-
-    // RENAME METHOD 対象
-    public void renameMe() {
-        System.out.println("old name");
-    }
-
-    
-
-    // INLINE METHOD 対象
-    public void inlineCaller() {
-        inlineCallee();
-    }
-
-    public void inlineCallee() {
-        System.out.println("callee executed");
+class Calculator {
+    public void foo() {
+        System.out.println("foo in Calculator (superclass)");
     }
 }
 
-
-package example;
-public class Utils {
-    private void moveMe() {
-        System.out.println("moved method");
-    }
+class AdvancedCalculator extends Calculator {
+    // まだfoo()はここには存在しない
 }
-
-package example;
-public class tekito {
-    public void newinlineCaller() {
-        inlineCallee();
-    }
-    
-}
-
-package example;
-public class SubCalculator extends Calculator {
-    @Override
-    public void pushDown() {
-        System.out.println("moved to subclass");
-    }
-}
-
 
