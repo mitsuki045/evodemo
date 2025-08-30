@@ -15,21 +15,18 @@ public class Calculator {
 
     // 計算メソッド
     
-    public int minus(int a, int b){
-        return a-b;
-    }
+    
     
 
-    public int calminus(int x, int y) {
-        return minus(int x,int y); 
+    protected int calminus(int x, int y) {
+        return x-y; 
     }
 
-    public int multiply(int a, int b) {
-        return a * b;
-    }
+    
 
     public int calmaltiply(int x, int y){
-        return multiply(x,y);
+        int n;
+        return n=x*y;
     }
 
 }
