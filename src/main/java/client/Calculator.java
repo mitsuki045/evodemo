@@ -10,14 +10,17 @@ public class Calculator {
      * ユーザID設定
      * @param userID
      */
-    public void SetUserId(int userID) {
-        this.UserId = userID;
-    }
+    
 
     /**
      * ユーザID取得
      * @return
      */
+
+     public int minus(int a, int b){
+        if (a<0) a+100;
+        return a-b;
+    }
     
     
 }
