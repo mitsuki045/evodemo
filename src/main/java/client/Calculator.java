@@ -22,8 +22,8 @@ public class Calculator {
         return 0+c;
     }
 
-    protected double calmaltiply(int x){
-        return x;
+    protected static final int newcalmaltiply(int x,int y){
+        return x*y;
     }
 
     
