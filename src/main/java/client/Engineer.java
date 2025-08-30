@@ -20,9 +20,7 @@ public class Engineer extends Calculator {
         return add(a, b); // 親クラスの add メソッドを使用
     }
 
-    protected double calminus(double x, int y) {
-        return x-y; 
-    }
+    
 
     
 

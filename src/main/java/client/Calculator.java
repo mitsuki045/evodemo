@@ -15,9 +15,8 @@ public class Calculator {
 
     // 計算メソッド
     
-    
-    public int newcalmaltiply(int x, double y){
-        return x*y;
+    protected double calminus(double x, double y) {
+        return x-y; 
     }
     
     

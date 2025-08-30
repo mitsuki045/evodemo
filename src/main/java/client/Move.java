@@ -2,7 +2,7 @@ package example;
 
 public class Move {
 
-   public int newcalmaltiply(double x, int y){
+   public int newcalmaltiply(int x, int y){
         return x*y;
     }
 
