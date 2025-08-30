@@ -21,9 +21,6 @@ public class Engineer extends Calculator {
      * スキル取得
      */
 
-    public void SetUserId(int userID) {
-        this.UserId = userID;
-    }
 
     public final double newadd (int a,double b){
         return a+b;
