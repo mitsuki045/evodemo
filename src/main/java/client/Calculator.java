@@ -16,32 +16,21 @@ public class Calculator {
     // 計算メソッド
     
     
-    public int minus(int a,int b){
-        return a-b;
+
+    public double calminus(int x, int y) {
+        return x-y; 
     }
 
-    public int calminus(int x, int y) {
-        return minus(x,y); 
+
+    protected static final int calmaltiply(int x, int y){
+        return x*y;
     }
 
-    public int maltiply(int a,int b){
-        return a*b;
-    }
-
-    public int calmaltiply(int x, int y){
-        return maltiply(x,y);
-    }
-
-    public int twocho(int x,int y){
-        if(x>y) return 100;
-        if(y>x) return 50; 
-        return 0;
-    }
-
+    
     public int caltwo(int a,int b, int c){
-        int n;
-        n=twocho(a,b);
-        return n+c;
+        if(a>b) return 100+c;
+        if(b>a) return 50+c; 
+        return 0+c;
     }
 
 }
