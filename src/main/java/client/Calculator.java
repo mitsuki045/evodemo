@@ -19,15 +19,5 @@ public class Calculator {
      * @return
      */
     
-    public int newadd (int a,double b){
-        return a+b;
-    }
     
-    public int minus(int a, int b){
-        return a-b;
-    }
-
-    protected String getSkill() {
-        return Skill;
-    }
 }
