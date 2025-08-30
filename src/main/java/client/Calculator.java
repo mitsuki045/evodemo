@@ -15,16 +15,6 @@ public class Calculator {
 
     // 計算メソッド
     
-    
-
-    public double calminus(int x, int y) {
-        return x-y; 
-    }
-
-
-    protected static final int calmaltiply(int x, int y){
-        return x*y;
-    }
 
     
     public int caltwo(int a,int b, int c){
