@@ -6,6 +6,9 @@ public class Engineer extends Calculator {
      */
     private String Skill;
 
+    public int GetUserId() {
+        return UserId;
+    }
     /**
      * スキル設定
      * @param skill
