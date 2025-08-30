@@ -16,11 +16,6 @@ public class Calculator {
     // 計算メソッド
     
     
-    public int newcalmaltiply(double x, int y){
-        return x*y;
-    }
-    
-    
     public int caltwo(int a,int b, int c){
         if(a>b) return 100+c;
         if(b>a) return 50+c; 
