@@ -1,12 +1,10 @@
 package example;
 
-class Calculator {
-    // foo() はここから削除された
+public class Calculator {
+    public void foo() {
+        System.out.println("foo in Calculator (superclass)");
+    }
 }
 
-class AdvancedCalculator extends Calculator {
-    @Override
-    public void foo() {
-        System.out.println("foo in AdvancedCalculator (subclass)");
-    }
+public class AdvancedCalculator extends Calculator {
 }
