@@ -1,7 +1,6 @@
+package example;
 
-package package1;
-
-public class User {
+public class Calculator {
     /**
      * ユーザID
      */
