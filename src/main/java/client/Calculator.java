@@ -18,7 +18,5 @@ public class Calculator {
      * ユーザID取得
      * @return
      */
-    public int GetUserId() {
-        return UserId;
-    }
+    
 }
