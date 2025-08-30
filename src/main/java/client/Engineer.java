@@ -17,6 +17,9 @@ public class Engineer extends Calculator {
         this.skill = skill;
     }
 
+     public void SetUserId(int userID) {
+        super.UserId = userID;
+    }
     /**
      * スキル取得
      */
@@ -26,6 +29,9 @@ public class Engineer extends Calculator {
         return a+b;
     }
     
+     public void SetUserId(int userID) {
+        super.UserId = userID;
+    }
     
 
     protected String getSkill() {
