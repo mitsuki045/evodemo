@@ -22,8 +22,6 @@ public class Calculator {
         return 0+c;
     }
 
-    public int newcalmaltiply(int x){
-        return x;
-    }
+    
 
 }
