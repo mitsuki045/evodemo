@@ -23,5 +23,12 @@ public class Engineer extends Calculator {
     public String getSkill() {
         return Skill;
     }
+
+    public int newadd (int a,int b){
+        return a+b;
+    }
     
+    public int minus(int a, int b){
+        return a-b;
+    }
 }
