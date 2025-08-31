@@ -11,7 +11,7 @@ public class Engineer extends Calculator {
         return skill;
     }
 
-    protected final double add(double a, int b) {
+    public int add(double a, int b) {
         return a + b;
     }
     
