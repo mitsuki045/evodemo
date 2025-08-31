@@ -21,7 +21,7 @@ public class Calculator {
     
     
 
-    public int newcalmaltiply(int x){
+    protected double newcalmaltiply(double x){
         return x;
     }
 
