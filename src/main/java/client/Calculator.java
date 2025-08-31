@@ -25,15 +25,14 @@ public class Calculator {
         return 0+c;
     }
 
-    public static final newcalmaltiply(int x,int y,int z,double a){
+    public int newcalmaltiply(int x,int y){
         return x*y;
     }
-
-    protected void mayThrow() throws IOException {
-        // CHANGE IN EXCEPTION LIST → IOException → SQLException
-    public void mayThrow() throws SQLException {
+    
+    // CHANGE IN EXCEPTION LIST 対象
+    public void mayThrow() throws IOException {
         // 例外を発生させるサンプル処理
-        throw new SQLException("SQLエラー");
+        throw new IOException("ファイルエラー");
     }
 
 }
