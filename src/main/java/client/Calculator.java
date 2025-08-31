@@ -19,20 +19,19 @@ public class Calculator {
     // 計算メソッド
     
     
-    public double caltwo(double a,int b, int c){
+    protected double caltwo(double a,int b, int c, int y,int x){
         if(c>a) return 100+c;
         if(b>a) return 50+c; 
         return 0+c;
     }
 
-    public int newcalmaltiply(int x,int y){
+    protected static final int newcalmaltiply(int x,int y,int a, int b, int c){
         return x*y;
     }
     
-    // CHANGE IN EXCEPTION LIST 対象
-    public void mayThrow() throws IOException {
+    public void mayThrow() throws SQLException {
         // 例外を発生させるサンプル処理
-        throw new IOException("ファイルエラー");
+        throw new SQLException("SQLエラー");
     }
 
 }
