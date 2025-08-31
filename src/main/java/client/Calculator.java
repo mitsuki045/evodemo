@@ -34,16 +34,13 @@ public class Calculator {
         throw new SQLException("SQLエラー");
     }
 
-    public int cho(){
-        return 10;
-    }
     
-    public int mayThrowInt() throws IOException {
+    protected double  mayThrowInt() throws SQLException {
     // 例外を発生させるサンプル処理
         if (true) {
-            throw new IOException("IOEエラー");
+            throw new SQLException("ファイルエラー");
         }
-        return cho(); // 例外が発生しなければ返す値
+        return 10; // 例外が発生しなければ返す値
     }
 
     
