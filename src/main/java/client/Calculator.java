@@ -25,7 +25,7 @@ public class Calculator {
         return 0+c;
     }
 
-        public double newcalmaltiply(int x,int y){
+    public final int newcalmaltiply(int x,int y){
         return x*y;
     }
     
