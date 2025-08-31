@@ -12,20 +12,20 @@ public class Calculator {
     }
 
     // ゲッター
-    protected int getUserId() {
+    protected static int getUserId() {
         return userId;
     }
 
     // 計算メソッド
     
     
-    public double newcaltwo(double a,int b, int c){
+    public static double newcaltwo(double a,int b, int c){
         if(c>a) return 100+c;
         if(b>a) return 50+c; 
         return 0+c;
     }
 
-    public final int newcalmaltiply(int x,int y){
+    public int newcalmaltiply(int x,int y){
         return x*y;
     }
     
