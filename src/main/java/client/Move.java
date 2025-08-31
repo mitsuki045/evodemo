@@ -8,6 +8,10 @@ public class Move {
         return 0+c;
     }
 
+    public double newcalmaltiply(double x,double y){
+        return x*y;
+    }
+
     
 
     
