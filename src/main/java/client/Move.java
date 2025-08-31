@@ -6,9 +6,7 @@ public class Move {
         return x;
     }
 
-    public double newcalmaltiply(double x,double y, int a,int z){
-        return x*y;
-    }
+    
 
     
 

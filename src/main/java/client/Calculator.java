@@ -25,10 +25,9 @@ public class Calculator {
         return 0+c;
     }
 
-    public int newcalmaltiply(int x){
-        return x;
+    public double newcalmaltiply(double x,double y){
+        return x*y;
     }
-
     
     public void mayThrow() throws SQLException {
         // 例外を発生させるサンプル処理
