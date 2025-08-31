@@ -25,21 +25,25 @@ public class Calculator {
         return 0+c;
     }
 
-    public final int newcalmaltiply(int x,int y){
+    public int newcalmaltiply(int x,int y){
         return x*y;
     }
     
-    protected final void mayThrow() throws SQLException {
+    public void mayThrow() throws SQLException {
         // 例外を発生させるサンプル処理
         throw new SQLException("SQLエラー");
     }
 
-    protected double mayThrowInt() throws IOException {
+    public int cho(){
+        return 10;
+    }
+    
+    public int mayThrowInt() throws IOException {
     // 例外を発生させるサンプル処理
         if (true) {
             throw new IOException("IOEエラー");
         }
-        return 10.0; // 例外が発生しなければ返す値
+        return cho(); // 例外が発生しなければ返す値
     }
 
     
