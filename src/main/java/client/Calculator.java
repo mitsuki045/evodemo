@@ -1,5 +1,8 @@
 package example;
 
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class Calculator {
     private int userId;
 
@@ -22,10 +25,13 @@ public class Calculator {
         return 0+c;
     }
 
-    protected static final int newcalmaltiply(int x,int y){
+    public newcalmaltiply(int x,int y){
         return x*y;
     }
 
-    
+    public void mayThrow() throws IOException {
+        // 例外を発生させるサンプル処理
+        throw new IOException("ファイルエラー");
+    }    
 
 }
