@@ -19,13 +19,13 @@ public class Calculator {
     // 計算メソッド
     
     
-    public final double caltwo(double a,int b, int c,int x, int y){
+    public final double newcaltwo(double a,int b, int c){
         if(c>a) return 100+c;
         if(b>a) return 50+c; 
         return 0+c;
     }
 
-    public int calmaltiply(double x,int y,int a,int y){
+    public double newcalmaltiply(double x,int y){
         return x*y;
     }
     
