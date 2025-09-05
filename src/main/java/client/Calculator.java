@@ -3,7 +3,7 @@ package example;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public abstract class Calculator {
+public class Calculator {
     private int userId;
 
     // セッター
