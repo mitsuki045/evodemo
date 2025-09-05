@@ -1,6 +1,6 @@
 package example;
 
-public abstract class Abstract {
+public class Abstract {
     public int add(int a, int b) {
         return a + b;
     }
