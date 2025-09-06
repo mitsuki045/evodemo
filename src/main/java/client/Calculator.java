@@ -24,13 +24,10 @@ public class Calculator {
     protected double newcalmaltiply(double x){
         return x;
     }
-
-    public Double newCalMultiply(Double x, Double y) {
-        if (x == null || y == null) {
-            throw new IllegalArgumentException("引数がnullです");
-            }
-        return x * y;
+    public double newcalmaltiply(double x,double y){
+        return x*y; 
     }
+    
     
     public void mayThrow() throws SQLException {
         // 例外を発生させるサンプル処理
