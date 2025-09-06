@@ -25,8 +25,11 @@ public class Calculator {
         return x;
     }
 
-    public double newcalmaltiply(double x,double y){
-        return x*y;
+    public Double newCalMultiply(Double x, Double y) {
+        if (x == null || y == null) {
+            throw new IllegalArgumentException("引数がnullです");
+            }
+        return x * y;
     }
     
     public void mayThrow() throws SQLException {
