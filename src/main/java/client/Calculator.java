@@ -24,8 +24,8 @@ public class Calculator {
     protected double newcalmaltiply(double x){
         return x;
     }
-    public double calmaltiply(double x,double y){
-        return x*y; 
+    public double newcalmaltiply(double x,double y){
+        return x*y+1; 
     }
     
     
