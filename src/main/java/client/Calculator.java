@@ -1,47 +1,11 @@
 package example;
 
-import java.io.IOException;
-import java.sql.SQLException;
-
 public class Calculator {
-    private int userId;
-
-    // セッター
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public int add(int a, int b) {
+        return a + b;
     }
 
-    // ゲッター
-    public int getUserId() {
-        return userId;
+    public boolean isPositive(int n) {
+        return n > 0;
     }
-
-    // 計算メソッド
-    
-    
-    
-
-    protected double newcalmaltiply(double x){
-        return x;
-    }
-    public double newcalmaltiply(double x,double y){
-        return x*y+1; 
-    }
-    
-    
-    public void mayThrow() throws SQLException {
-        // 例外を発生させるサンプル処理
-        throw new SQLException("SQLエラー");
-    }
-
-    
-    protected double  mayThrowInt() throws SQLException {
-    // 例外を発生させるサンプル処理
-        if (true) {
-            throw new SQLException("ファイルエラー");
-        }
-        return 10; // 例外が発生しなければ返す値
-    }
-
-    
 }
