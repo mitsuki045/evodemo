@@ -5,7 +5,7 @@ public class Calculator {
         return a + b + 1;
     }
 
-    private int sub(int a, int b) {
+    private double sub(int a, int b) {
         return a - b;
     }
 }
