@@ -1,5 +1,5 @@
 // add.java
-class X {
+class Onegai {
     void hello() {
         System.out.println("Xのメソッド");
     }
@@ -23,7 +23,5 @@ public class Add {  // このファイルの public クラス（ファイル名�
         b.hello(); // X のメソッドも使える
         b.greet(); // B のメソッド
     }
-    public int add(int x,int y){
-        return a;
-    }
+    
 }
