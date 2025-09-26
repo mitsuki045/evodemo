@@ -5,13 +5,8 @@ class Onegai {
     }
 }
 
-class Z {
-    void hello() {
-        System.out.println("Zのメソッド");
-    }
-}
 
-class B extends Z {
+class B extends Onegai {
     void greet() {
         System.out.println("Bのメソッド");
     }
