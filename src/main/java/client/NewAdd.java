@@ -1,4 +1,5 @@
 // add.java
+package example;
 class Onegai {
     void hello() {
         System.out.println("Xのメソッド");
