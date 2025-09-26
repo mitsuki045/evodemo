@@ -5,13 +5,13 @@ class X {
     }
 }
 
-class Y {
+class Z {
     void hello() {
-        System.out.println("Yのメソッド");
+        System.out.println("Zのメソッド");
     }
 }
 
-class B extends Y {
+class B extends Z {
     void greet() {
         System.out.println("Bのメソッド");
     }
