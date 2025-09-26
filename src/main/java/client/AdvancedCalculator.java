@@ -1,6 +1,6 @@
 package example;
 
-public class Advancedtwo extends Dast {
+public class AdvancedCalculator extends Dast {
     @Override
     public int multiply(int a, int b) {
         return a * b;
