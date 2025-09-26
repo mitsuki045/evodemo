@@ -12,7 +12,7 @@ class B extends Onegai {
     }
 }
 
-public class Add {  // このファイルの public クラス（ファイル名と同じにする）
+public class NewAdd {  // このファイルの public クラス（ファイル名と同じにする）
     public static void main(String[] args) {
         B b = new B();
         b.hello(); // X のメソッドも使える
