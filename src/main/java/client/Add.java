@@ -11,7 +11,7 @@ class Y {
     }
 }
 
-class B extends X {
+class B extends Y {
     void greet() {
         System.out.println("Bのメソッド");
     }
@@ -22,5 +22,8 @@ public class Add {  // このファイルの public クラス（ファイル名�
         B b = new B();
         b.hello(); // X のメソッドも使える
         b.greet(); // B のメソッド
+    }
+    public int add(int x,int y){
+        return a;
     }
 }
