@@ -8,4 +8,8 @@ public class AdvancedCalculator extends Dast {
     public int add(int a,int b){
         return a+b+10;
     }
+
+    public int trash(int a,int b){
+        return a-100-b;
+    }
 }
