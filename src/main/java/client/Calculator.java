@@ -5,7 +5,7 @@ public class Calculator {
     public int multiply(int a, int b) {
     }
     
-    public int newadd(int a, double b) {
+    public int add(int a, double b) {
         return a + b + 1;
     }
 
