@@ -2,7 +2,7 @@ package example;
 
 public class Dast {
     
-    public abstract int multiply(int a, int b){
+    public abstract int newmultiply(int a, int b){
     }
 }
 
