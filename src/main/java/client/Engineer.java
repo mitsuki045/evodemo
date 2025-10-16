@@ -3,10 +3,6 @@ package example;
 public class Engineer extends Calculator {
     private String skill;
 
-    public void setSkill(String skill) {
-        this.skill = skill;
-    }
-
     public String getSkill() {
         return skill;
     }
