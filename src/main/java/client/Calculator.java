@@ -1,4 +1,4 @@
-package example;
+package client;
 
 public class Calculator {
 
